@@ -10,7 +10,7 @@ const pool = new Pool({
    user: 'postgres',
    host: 'localhost',
    database: 'postgres',
-   password: '$HarrietPorter24',
+   password: 'postgres',
    port: 3000,
 })
 
@@ -29,7 +29,7 @@ app.get("/api/products", (req, res) => {
 app.post("/api/products/create", (req, res) => {
 
    console.log(req.body);
-/*
+
    const id = req.body.id;
    const name = req.body.name;
    const price = req.body.price;
@@ -44,7 +44,7 @@ app.post("/api/products/create", (req, res) => {
 
        res.status(200).json(results.rows)
    });
-*/
+
 
    res.status(200).send("ok");
 })
