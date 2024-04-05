@@ -4,11 +4,11 @@ $(function(){
        
         const data = {
             id: $("#productId").val(),
-            name: $("#productName").val(),
+            productname: $("#productName").val(),
             price: $("#productPrice").val()
         }
 
-        $.post( "/api/products/create", data, function( data ) {
+        $.post( "/api/product/create", data, function( data ) {
             console.log("Done");
         });
  
